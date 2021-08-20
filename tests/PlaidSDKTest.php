@@ -3,7 +3,6 @@
 namespace Stephenjude\Plaid\Tests;
 
 use Mockery;
-use Stephenjude\Plaid\Facades\Plaid as PlaidFacade;
 use Stephenjude\Plaid\Plaid;
 
 class PlaidSDKTest extends TestCase
