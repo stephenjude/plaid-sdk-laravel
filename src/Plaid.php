@@ -60,7 +60,7 @@ class Plaid extends \TomorrowIdeas\Plaid\Plaid
         $class = "\\TomorrowIdeas\\Plaid\\Resources\\".ucwords($method);
 
         if (class_exists($class)
-            && !(new ReflectionClass($class))->isAbstract()
+            && ! (new ReflectionClass($class))->isAbstract()
         ) {
             return new $class(
                 $this->getHttpClient(),
