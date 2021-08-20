@@ -59,19 +59,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type":"package",
-            "package": {
-                "name": "tomorrow-ideas/plaid-sdk-php",
-                "version":"1.0",
-                "source": {
-                    "url": "https://github.com/stephenjude/plaid-sdk-php.git",
-                    "type": "git",
-                    "reference":"master"
-                }
-            }
-        }
-    ]
+    "prefer-stable": true
 }
