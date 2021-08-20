@@ -1,24 +1,26 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "stephenjude/plaid-sdk-laravel",
+    "description": "Laravel Wrapper For Plaid PHP SDK",
     "keywords": [
-        ":vendor_name",
+        "stephenjude",
         "laravel",
-        "package_slug"
+        "plaid-sdk-laravel"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/stephenjude/plaid-sdk-laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "stephenjude",
+            "email": "hello@stephenjude.me",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.3|^7.4|^8.0",
+        "illuminate/contracts": "6.*|7.*|8.*",
+        "illuminate/support": "6.*|7.*|8.*",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "tomorrow-ideas/plaid-sdk-php": "^1.0"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -30,13 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Stephenjude\\Plaid\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Stephenjude\\Plaid\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,13 +51,27 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Stephenjude\\Plaid\\PlaidServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Plaid": "Stephenjude\\Plaid\\Facades\\Plaid"
             }
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "tomorrow-ideas/plaid-sdk-php",
+                "version":"1.0",
+                "source": {
+                    "url": "https://github.com/stephenjude/plaid-sdk-php.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        }
+    ]
 }
