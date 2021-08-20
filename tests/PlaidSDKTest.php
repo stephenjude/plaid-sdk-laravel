@@ -3,22 +3,16 @@
 namespace Stephenjude\Plaid\Tests;
 
 use Mockery;
+use Stephenjude\Plaid\Facades\Plaid as PlaidFacade;
+use Stephenjude\Plaid\Plaid;
 
 class PlaidSDKTest extends TestCase
 {
     /** @test */
     public function test_package_class_returns_valid_plaid_sdk_object()
     {
-        $plaidWrapperClass = Mockery::mock(\Stephenjude\Plaid\Plaid::class);
+        $plaidWrapperClass = Mockery::mock(Plaid::class);
 
         $this->assertInstanceOf(\TomorrowIdeas\Plaid\Plaid::class, $plaidWrapperClass);
-    }
-
-    /** @test */
-    public function test_package_facade_returns_valid_plaid_sdk_object()
-    {
-        $plaidWrapperFacade = Mockery::mock(\Stephenjude\Plaid\Facades\Plaid::class);
-
-        $this->assertInstanceOf(\TomorrowIdeas\Plaid\Plaid::class, $plaidWrapperFacade);
     }
 }
