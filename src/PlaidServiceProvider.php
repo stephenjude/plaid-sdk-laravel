@@ -44,7 +44,7 @@ class PlaidServiceProvider extends PackageServiceProvider
      */
     protected function registerPlaid()
     {
-        $this->app->singleton('plaid-sdk-laravel', function ($app) {
+        $this->app->singleton('plaid-sdk-laravel', function () {
             return new Plaid();
         });
 
