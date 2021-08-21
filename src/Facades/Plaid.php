@@ -7,21 +7,21 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Stephenjude\Plaid\Plaid
  *
- * @method \TomorrowIdeas\Plaid\Resources\Accounts accounts()
- * @method \TomorrowIdeas\Plaid\Resources\Auth auth()
- * @method \TomorrowIdeas\Plaid\Resources\BankTransfers bankTransfers()
- * @method \TomorrowIdeas\Plaid\Resources\Categories categories()
- * @method \TomorrowIdeas\Plaid\Resources\Institutions institutions()
- * @method \TomorrowIdeas\Plaid\Resources\Investments investments()
- * @method \TomorrowIdeas\Plaid\Resources\Items items()
- * @method \TomorrowIdeas\Plaid\Resources\Liabilities liabilities()
- * @method \TomorrowIdeas\Plaid\Resources\Tokens tokens()
- * @method \TomorrowIdeas\Plaid\Resources\Payments payments()
- * @method \TomorrowIdeas\Plaid\Resources\Processors processors()
- * @method \TomorrowIdeas\Plaid\Resources\Reports reports()
- * @method \TomorrowIdeas\Plaid\Resources\Sandbox sandbox()
- * @method \TomorrowIdeas\Plaid\Resources\Transactions transactions()
- * @method \TomorrowIdeas\Plaid\Resources\Webhooks webhooks()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Accounts accounts()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Auth auth()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\BankTransfers bankTransfers()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Categories categories()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Institutions institutions()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Investments investments()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Items items()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Liabilities liabilities()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Tokens tokens()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Payments payments()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Processors processors()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Reports reports()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Sandbox sandbox()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Transactions transactions()
+ * @method \TomorrowIdeas\PlaidSDK\Resources\Webhooks webhooks()
  */
 class Plaid extends Facade
 {
