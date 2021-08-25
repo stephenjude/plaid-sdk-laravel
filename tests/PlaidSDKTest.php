@@ -12,6 +12,6 @@ class PlaidSDKTest extends TestCase
     {
         $plaidWrapperClass = Mockery::mock(Plaid::class);
 
-        $this->assertInstanceOf(\Stephenjude\Plaid\Plaid::class, $plaidWrapperClass);
+        $this->assertInstanceOf(\Stephenjude\PlaidSDK\Plaid::class, $plaidWrapperClass);
     }
 }
