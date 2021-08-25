@@ -2,8 +2,6 @@
 
 namespace Stephenjude\Plaid;
 
-use TomorrowIdeas\Plaid\Resources\AbstractResource;
-
 class Plaid extends \Stephenjude\PlaidSDK\Plaid
 {
     public function __construct()
