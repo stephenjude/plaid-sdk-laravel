@@ -90,7 +90,7 @@ Methods:
 
 Example:
 ```php
-$accounts = $plaid->accounts->list($access_token);
+$accounts = $plaid->accounts()->list($access_token);
 ```
 
 ### Auth
@@ -105,7 +105,7 @@ Methods:
 
 Example:
 ```php
-$auth = $plaid->auth->get($access_token);
+$auth = $plaid->auth()->get($access_token);
 ```
 
 ### Bank Transfers (U.S. only)
@@ -143,7 +143,7 @@ create(
 
 Example:
 ```php
-$transfers = $plaid->bank_transfers->list();
+$transfers = $plaid->bank_transfers()->list();
 ```
 ### Categories
 
@@ -157,7 +157,7 @@ Methods:
 
 Example:
 ```php
-$categories = $plaid->categories->list();
+$categories = $plaid->categories()->list();
 ```
 
 ### Institutions
@@ -174,7 +174,7 @@ Methods:
 
 Example:
 ```php
-$institutions = $plaid->institutions->list(20, 0);
+$institutions = $plaid->institutions()->list(20, 0);
 ```
 
 ### Investments
@@ -190,7 +190,7 @@ Methods:
 
 Example:
 ```php
-$holdings = $plaid->investments->listHoldings($access_token);
+$holdings = $plaid->investments()->listHoldings($access_token);
 ```
 ### Tokens
 
@@ -219,7 +219,7 @@ create(string $client_name,
 
 Example:
 ```php
-$token = $plaid->tokens->create($client_name, $language, ["US","CA"], $user_id);
+$token = $plaid->tokens()->create($client_name, $language, ["US","CA"], $user_id);
 ```
 
 ### Liabilities
@@ -234,7 +234,7 @@ Methods:
 
 Example:
 ```php
-$liabilities = $plaid->liabilities->list($access_token);
+$liabilities = $plaid->liabilities()->list($access_token);
 ```
 
 ### Items
@@ -253,7 +253,7 @@ Methods:
 * `rotateAccessToken(string $access_token): object`
 
 ```php
-$item = $plaid->items->get($access_token);
+$item = $plaid->items()->get($access_token);
 ```
 
 ### Webhooks
@@ -269,7 +269,7 @@ Methods:
 
 Example:
 ```php
-$verification_key = $plaid->webhooks->getVerificationKey($key_id);
+$verification_key = $plaid->webhooks()->getVerificationKey($key_id);
 ```
 
 ### Transactions
@@ -285,7 +285,7 @@ Methods:
 
 Example:
 ```php
-$transactions = $plaid->transactions->list($access_token, $start_date, $end_date);
+$transactions = $plaid->transactions()->list($access_token, $start_date, $end_date);
 ```
 
 ### Reports
@@ -324,7 +324,7 @@ Methods:
 
 Example:
 ```php
-$plaid->payments->createRecipient($name, $iban, $address);
+$plaid->payments()->createRecipient($name, $iban, $address);
 ```
 
 ### Processors
@@ -357,7 +357,7 @@ Methods:
 
 Example:
 ```php
-$response = $plaid->sandbox->fireWebhook($access_token);
+$response = $plaid->sandbox()->fireWebhook($access_token);
 ```
 
 ## Entities
